@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<title>Nandan V</title>
+<meta charset="UTF-8">
+<meta name="description" content="Hey! I'm Nandan - an engineering student, filmmaker, and web developer.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<body>
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-black w3-card w3-opacity" id="myNavbar">
+      <a href="./index.html" class="w3-bar-item w3-button">Nandan V</a>
+      <!-- Right-sided navbar links -->
+      <div class="w3-right w3-hide-small">
+        <a href="./index.html#about-me" class="w3-bar-item w3-button">ABOUT ME</a>
+        <a href="/#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope-o"></i> CONTACT</a>
+      </div>
+      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
+  <!-- Sidebar on small screens when clicking the menu icon -->
+  <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+    <a href="/#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT ME</a>
+    <a href="/#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+  </nav>
+
+  <!-- Content Start -->
+  <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+    <div class="w3-display-middle container">
+      <div class="w3-container w3-center w3-margin-bottom w3-text-black">
+        <h1>A few of my projects!</h1>
+      </div>
+      <div class="row row-cols-2">
+        <div class="col">
+          <div class="card bg-dark">
+            <img src="image/journal.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Journal App</h5>
+              <p class="card-text">Since I occasionally love to write and share my thoughts, I decided to make a web app.</p>
+              <a href="https://github.com/nandanv2702/ejs-challenge" target="_blank" class="btn btn-primary"><i class="fa fa-github" aria-hidden="true"></i> View on Github</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-dark">
+            <img src="image/simon-game.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Simon Game</h5>
+              <p class="card-text">A Javascript memory game where you need to memorize an ever-increasing pattern. It's fun to play!</p>
+              <a href="https://github.com/nandanv2702/PersonalProjects/tree/master/Simon%20Game" target="_blank" class="btn btn-primary"><i class="fa fa-github" aria-hidden="true"></i> View on Github</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w3-container w3-center w3-margin-top w3-text-black">
+        <a href="#down" style="color: black"><i class="fa fa-chevron-circle-down fa-2x" aria-hidden="true" style="margin: 30px 0 0 0;"></i></a>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+    <div class="w3-display-middle container" id="down">
+      <div class="row row-cols-2">
+        <div class="col">
+          <div class="card bg-dark">
+            <img src="image/todo-list.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">To-Do List</h5>
+              <p class="card-text">It takes me a loooong time to get stuff done. So I made this to help me organize myself.</p>
+              <a href="https://github.com/nandanv2702/todo-list-app" target="_blank" class="btn btn-primary"><i class="fa fa-github" aria-hidden="true"></i> View on Github</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-dark">
+            <img src="image/unitrack.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">UniTrack</h5>
+              <p class="card-text">A web app I am currently updating for a startup I co-founded. Deployed using Amazon Web Services (AWS)</p>
+              <a href="https://theunitrackapp.com/" target="_blank" class="btn btn-primary"><i class="fa fa-link" aria-hidden="true"></i> Link to project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+
+
+    // Toggle between showing and hiding the sidebar when clicking the menu icon
+    var mySidebar = document.getElementById("mySidebar");
+
+    function w3_open() {
+      if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+      } else {
+        mySidebar.style.display = 'block';
+      }
+    }
+
+    // Close the sidebar with the close button
+    function w3_close() {
+      mySidebar.style.display = "none";
+    }
+  </script>
+</body>
+
+</html>

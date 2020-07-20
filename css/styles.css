@@ -1,6 +1,6 @@
 body,
 h1 {
-  font-family: "Raleway", sans-serif
+  font-family: "Raleway", sans-serif !important;
 }
 
 body,
@@ -40,3 +40,26 @@ html {
     background-attachment: fixed;
 }
   }
+
+.card:hover {
+  box-shadow: 0 0 15px rgba(33,33,33,0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+.card {
+  transition: all 0.3s ease-in-out;
+}
+
+.fa-chevron-circle-down {
+  opacity: 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+.fa-chevron-circle-down:hover {
+  opacity: 80%;
+  transition: all 0.3s ease-in-out;
+}
+
+.w3-button {
+  border-radius: 2px;
+}
