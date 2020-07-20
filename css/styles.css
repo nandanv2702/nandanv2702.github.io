@@ -17,3 +17,25 @@ html {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
+@media (max-width: 480px) {
+  .bgimg {
+    background-image: url('../image/profile-phone.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+}
+
+@media (min-width: 481px){
+  .bgimg {
+    background-image: url('../image/profile.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+  }
