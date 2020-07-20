@@ -9,6 +9,10 @@ html {
   scroll-behavior: smooth;
 }
 
+:hover {
+  text-decoration: none !important;
+}
+
 .bgimg {
   background-image: url('../image/profile.png');
   min-height: 100%;
