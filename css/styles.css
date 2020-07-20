@@ -32,6 +32,11 @@ html {
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
+
+  iframe {
+    width: 355px;
+    height: 200px;
+  }
 }
 
 @media (min-width: 481px){
@@ -42,6 +47,10 @@ html {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+iframe {
+  width: 560px;
+  height: 315px;
 }
   }
 
@@ -66,4 +75,14 @@ html {
 
 .w3-button {
   border-radius: 2px;
+}
+
+iframe {
+  border-radius: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+iframe:hover {
+  box-shadow: 0 0 15px rgba(33,33,33,0.5);
+  transition: all 0.3s ease-in-out;
 }
