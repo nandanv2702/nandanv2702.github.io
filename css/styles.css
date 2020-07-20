@@ -27,6 +27,9 @@ html {
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
+  @media (max-width: @iphone-screen) {
+        background-attachment: scroll;
+    }
 }
 
 @media (min-width: 481px){
