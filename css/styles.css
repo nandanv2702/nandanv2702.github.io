@@ -20,16 +20,14 @@ html {
 
 @media (max-width: 480px) {
   .bgimg {
-    background-image: url('../image/profile-phone.jpg');
-    /* min-height: 100%; */
+    background-image: linear-gradient(315deg, #00d2ff 20%, #fa7735 90%);
+    /* background-image: url('../image/profile-phone.jpg'); */
+    min-height: 100%;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
-  @media (max-width: @iphone-screen) {
-        background-attachment: scroll;
-    }
 }
 
 @media (min-width: 481px){
