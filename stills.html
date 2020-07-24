@@ -40,6 +40,12 @@ margin:0;
         <i class="fa fa-bars"></i>
       </a>
     </div>
+    <!-- Progess bar -->
+    <div class="header">
+    <div class="progress-container w3-opacity">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+  </div>
   </div>
   <!-- Sidebar on small screens when clicking the menu icon -->
   <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
@@ -48,6 +54,8 @@ margin:0;
     <a href="http://theexuberantspirit.wordpress.com/" target="_blank" onclick="w3_close()" class="w3-bar-item w3-button">BLOG</a>
     <a href="./#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
   </nav>
+
+
 
   <!-- Content Start -->
   <div class="w3-animate-opacity">
@@ -147,6 +155,16 @@ margin:0;
     // Close the sidebar with the close button
     function w3_close() {
       mySidebar.style.display = "none";
+    }
+
+    // Progress bar
+    window.onscroll = function() {myFunction()};
+
+    function myFunction() {
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("myBar").style.width = scrolled + "%";
     }
   </script>
 </body>
