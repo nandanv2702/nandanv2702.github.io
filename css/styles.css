@@ -38,6 +38,10 @@ html {
     width: 355px;
     height: 200px;
   }
+
+  form {
+    width: 200px;
+  }
 }
 
 @media (min-width: 481px){
@@ -49,9 +53,14 @@ html {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
 iframe {
   width: 560px;
   height: 315px;
+}
+
+form {
+  width: 450px;
 }
   }
 
