@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html>
-<title>Nandan V - Filmmaking</title>
+<title>Nandan V</title>
 <meta charset="UTF-8">
 <meta name="description" content="Hey! I'm Nandan - an engineering student, filmmaker, and web developer.">
+<meta property="og:title" content="Nandan V - A Creative. An Engineer." />
+<meta property="og:description" content="Hey! I'm Nandan - an engineering student, self-taught web developer, and YouTube filmmaker. Interested in my work? Let's chat!" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:image" content="https://nandanv2702.github.io/image/profile.jpg" />
+<meta property="og:url" content="https://nandanv2702.github.io" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="css/styles.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<style type="text/css">
+body {
+background-color:#212121;
+padding:0;
+margin:0;
+}
+</style>
 
 <body>
   <!-- Navbar (sit on top) -->
@@ -26,6 +40,12 @@
         <i class="fa fa-bars"></i>
       </a>
     </div>
+    <!-- Progess bar -->
+    <div class="header">
+    <div class="progress-container w3-opacity">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+  </div>
   </div>
   <!-- Sidebar on small screens when clicking the menu icon -->
   <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
@@ -35,17 +55,77 @@
     <a href="./#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
   </nav>
 
-  <!-- Content Start -->
-  <div class="bgimg w3-display-container w3-animate-opacity w3-text-black">
-    <div class="w3-display-middle">
-      <h1 class="w3-xxxlarge w3-animate-top w3-center w3-margin-bottom">Coming Soon...</h1>
-      <div class="w3-container ">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/B5wK5uBLuhY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
 
+
+  <!-- Content Start -->
+  <div class="w3-animate-opacity">
+    <div class="container" style="display: block; justify-content: center; align-items: center; height: 100%; color: #27D461">
+      <h1 class="w3-center w3-xxlarge" style="padding-top: 100px;">
+            Filmmaking Stills
+      </h1>
+      <div class="row" style="padding-top: 50px;">
+        <div class="col-lg w3-margin">
+          <img src="image/stills/img7.png" class="card-img" alt="...">
+        </div>
+        <div class="col-lg w3-margin">
+          <img src="image/stills/img1.png" class="card-img" alt="...">
+        </div>
+        <div class="col-lg w3-margin">
+          <img src="image/stills/img3.png" class="card-img" alt="...">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg w3-margin">
+          <img src="image/stills/img20.png" class="card-img" alt="...">
+        </div>
+        <div class="col-lg w3-margin">
+          <img src="image/stills/img0.png" class="card-img" alt="...">
+        </div>
+        <div class="col-lg w3-margin">
+          <img src="image/stills/img18.png" class="card-img" alt="...">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg w3-margin">
+          <img src="image/stills/img19.png" class="card-img" alt="...">
+        </div>
+        <div class="col-lg w3-margin">
+          <img src="image/stills/img17.png" class="card-img" alt="...">
+        </div>
+        <div class="col-lg w3-margin">
+          <img src="image/stills/img23.png" class="card-img" alt="...">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg w3-margin">
+          <img src="image/stills/img4.png" class="card-img" alt="...">
+        </div>
+        <div class="col-lg w3-margin">
+          <img src="image/stills/img24.png" class="card-img" alt="...">
+        </div>
+        <div class="col-lg w3-margin">
+          <img src="image/stills/img34.png" class="card-img" alt="...">
+        </div>
+      </div>
+      <div class="row" style="padding-bottom: 50px;">
+        <div class="col-lg w3-margin">
+          <img src="image/stills/img41.png" class="card-img" alt="...">
+        </div>
+        <div class="col-lg w3-margin">
+          <img src="image/stills/img25.png" class="card-img" alt="...">
+        </div>
+        <div class="col-lg w3-margin">
+          <img src="image/stills/img2.png" class="card-img" alt="...">
+        </div>
+      </div>
+    </div>
+    <div class="w3-container w3-center" style="margin: 0 0 100px 0;">
+      <h2 style="color: white; margin-bottom: 25px;">Like this content?</h2>
+      <a href="https://www.youtube.com/channel/UCS2OhOqVdfQsHvIsYJKS0_g">
+            <button type="button" name="resume" class="btn w3-green" id="download"><i class="fa fa-youtube" style="margin-right: 5px;"></i> Check out more of my work!</button>
+          </a>
     </div>
   </div>
-
   <script>
     // Modal Image Gallery
     function onClick(element) {
@@ -70,6 +150,16 @@
     // Close the sidebar with the close button
     function w3_close() {
       mySidebar.style.display = "none";
+    }
+
+    // Progress bar
+    window.onscroll = function() {myFunction()};
+
+    function myFunction() {
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("myBar").style.width = scrolled + "%";
     }
   </script>
 </body>

@@ -125,3 +125,9 @@ iframe:hover {
   background-color: #009f00 !important;
   width: 0%;
 }
+
+.col-lg {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
