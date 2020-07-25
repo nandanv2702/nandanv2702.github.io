@@ -24,8 +24,8 @@ html {
 
 @media (max-width: 480px) {
   .bgimg {
-    background-color: #E0E0E0;
-    background-image: linear-gradient(315deg, #00d2ff 80%, #1ab7ea 50%);
+    background-color: #1ab7ea;
+    /* background-image: linear-gradient(315deg, #00d2ff 80%, #1ab7ea 50%); */
     /* background-image: url('../image/profile-phone.jpg'); */
     min-height: 100%;
     background-position: center;
